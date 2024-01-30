@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dictionary App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <h1>Dictionary App</h1>
+            <div>
+                <label for="searchInput">Search Word:</label>
+                <input type="text" id="searchInput" placeholder="Enter the word" />
+            </div>
+            <button onclick="searchWord()">Search Word</button>
+            <button onclick="toggleAdditionSection()">I want to add a word</button>
+
+            <div id="additionSection" style="display: none">
+                <label for="wordInput">Word:</label>
+                <input type="text" id="wordInput" placeholder="Enter a word" />
+
+                <label for="definitionInput">Definition:</label>
+                <input type="text" id="definitionInput" placeholder="Enter the definition" />
+
+                <button onclick="addWord()">Add Word</button>
+            </div>
+
+            <p id="result"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
